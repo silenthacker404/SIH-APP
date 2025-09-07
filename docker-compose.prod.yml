@@ -1,0 +1,18 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: healthapp-backend
+    restart: always
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: healthapp-frontend
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - backend

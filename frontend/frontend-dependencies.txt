@@ -1,0 +1,10 @@
+react
+react-dom
+react-router-dom
+
+tailwindcss
+postcss
+autoprefixer
+
+polyfill
+
